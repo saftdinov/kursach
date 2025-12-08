@@ -227,11 +227,11 @@ body {
         display: none;
     }
     .main {
-        padding-top: 40px;
+        padding-top: 50px;
     }
 
     .main-content {
-        padding: 40px 15px 60px;
+        padding: 50px 15px 60px;
         gap: 0px;
     }
 
@@ -283,6 +283,7 @@ body {
         font-size: 13px;
     }
 }
+
 
 
 
