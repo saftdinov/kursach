@@ -232,10 +232,11 @@ body {
 
     .main-content {
         padding: 60px 15px 60px;
-        gap: 5px;
+        gap: 0px;
     }
 
     .main-text3 {
+        padding-top: 10px;
         font-size: 24px;
         line-height: 1.4;
         max-width: 90%;
@@ -282,6 +283,7 @@ body {
         font-size: 13px;
     }
 }
+
 
 
 
