@@ -231,7 +231,7 @@ body {
     }
 
     .main-content {
-        padding: 60px 15px 60px;
+        padding: 40px 15px 60px;
         gap: 0px;
     }
 
@@ -283,6 +283,7 @@ body {
         font-size: 13px;
     }
 }
+
 
 
 
