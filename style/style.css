@@ -232,7 +232,7 @@ body {
 
     .main-content {
         padding: 40px 15px 60px;
-        gap: 30px;
+        gap: 10px;
     }
 
     .main-text3 {
@@ -245,7 +245,7 @@ body {
         flex-direction: column;
         gap: 15px;
         width: 100%;
-        padding-top: 10px;
+        padding-top: 20px;
     }
 
     .main-application {
@@ -282,4 +282,5 @@ body {
         font-size: 13px;
     }
 }
+
 
