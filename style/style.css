@@ -227,7 +227,7 @@ body {
         display: none;
     }
     .main {
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .main-content {
@@ -283,6 +283,7 @@ body {
         font-size: 13px;
     }
 }
+
 
 
 
