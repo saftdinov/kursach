@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
-    font-weight: normal; /* Добавляем нормальную насыщенность */
+    src: url(font/Comfortaa.ttf);
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
-    font-weight: bold; /* Для жирного текста */
+    src: url(font/Comfortaa.ttf);
+    font-weight: bold;
 }
 
 * {
@@ -15,18 +15,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* === ШАПКА === */
 
 .header {
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
+
 .header-top {
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,89 +44,69 @@ a {
     background-color: hsla(0, 0%, 0%, 0.3);
     z-index: 1000;
 }
+
 .image-button {
-    background-color: transparent;
-    border-color: transparent;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-
-.header-logo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-family: "Comfortaa", sans-serif;
-    font-size: 32px;
+.header-logo img {
+    object-fit: contain;
 }
-
-
 
 .header-nav {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-family: "Comfortaa", sans-serif;
-    font-size: 21px;
     gap: 90px;
 }
 
 .header-nav-galereya {
     white-space: nowrap;
     color: white;
-    font-family: "Comfortaa", sans-serif;
     font-size: 21px;
 }
 
-.header-application {
-    width: 343px;
-    height: 43px;
-    color: #434343;
-    font-family: "Comfortaa", sans-serif;
-    background: #FFFFFF4D;
-    backdrop-filter: blur(18px);
-    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.15);
-    font-size: 21px;
-    text-transform: lowercase;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
+/* === ОСНОВНОЙ КОНТЕНТ === */
 
-}
-
-.header-mess img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
-
-.header-mess {
-
-    display: flex;
-    gap: 95px;
-}
-
-.main{
-    padding-top: 110px;
-    z-index: 2;
+.main {
     width: 100%;
-    height: 100vh;
-    background-image: url("../img/backg.jpg");
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: url(../img/backg.jpg);
     background-size: cover;
     background-position: center;
+    padding-top: 110px; /* Отступ под хедер */
+    position: relative;
 }
 
-.main img {
-    width: 1920vw;
-    height: 1440vw;
-    display: block;
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 60px 20px 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.main-text3 {
+    font-size: 36px;
+    color: white;
+    line-height: 1.2;
+    max-width: 800px;
+    word-wrap: break-word;
+}
+
+.main-btn {
+    display: flex;
+    gap: 30px;
 }
 
 .main-application {
-    color: #434343;
     width: 285px;
     height: 43px;
+    color: #434343;
     font-family: "Comfortaa", sans-serif;
     background: #FFFFFF4D;
     backdrop-filter: blur(18px);
@@ -130,58 +118,11 @@ a {
     border: none;
 }
 
-.main-actions {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 90px 80px;
-}
-
-.main-btn {
-    gap: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.main-text1 {
-    transform: translateY(-50%);
-    font-size: 64px;
-    color: #413E3E;
-    font-family: "Comfortaa", sans-serif;
-    z-index: 3;
-}
-.main-text2 {
-    position: absolute;
-    top: 32%;
-    left: 410px;
-    transform: translateY(-50%);
-    font-size: 64px;
-    color: #335bff;
-    font-family: "Comfortaa", sans-serif;
-    z-index: 3;
-
-}
-.main-text3 {
-    width: 656px;
-    height: 40px;
-    transform: translateY(-50%);
-    font-size: 36px;
-    color: #ffffff;
-    font-family: "Comfortaa", sans-serif;
-    z-index: 3;
-
-}
+/* === ФУТЕР === */
 
 .footer {
     background-color: #0a1224;
-    color: white;
     padding: 40px 80px 20px;
-    font-family: Comfortaa, sans-serif;
 }
 
 .footer-content {
@@ -198,34 +139,28 @@ a {
 
 .footer-title {
     font-size: 28px;
-    font-weight: normal;
     margin-bottom: 5px;
 }
 
 .footer-subtitle {
     font-size: 16px;
     color: #ccc;
-    margin-top: 0;
     margin-bottom: 20px;
 }
 
 .footer-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .footer-link {
     color: #ddd;
-    text-decoration: none;
-    font-size: 16px;
     display: block;
-    padding: 5px 0;
-    transition: color 0.2s;
+    padding: 4px 0;
+    font-size: 16px;
 }
 
 .footer-link:hover {
-    color: #fff;
+    color: white;
 }
 
 .footer-bottom {
@@ -236,31 +171,33 @@ a {
 
 .footer-bottom-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-bottom-link {
     color: #999;
-    text-decoration: none;
     font-size: 14px;
-    transition: color 0.2s;
+    text-decoration: none;
 }
 
 .footer-bottom-link:hover {
     color: #ddd;
 }
 
+/* === МОБИЛЬНАЯ АДАПТАЦИЯ === */
+
 @media (max-width: 768px) {
+    /* ШАПКА */
     .header-top {
         padding: 10px 15px;
         height: auto;
-        flex-wrap: wrap;
         gap: 10px;
+        flex-wrap: wrap;
     }
 
     .header-logo {
@@ -268,6 +205,7 @@ a {
         white-space: nowrap;
         flex: 1;
         min-width: 120px;
+        justify-content: flex-start;
     }
 
     .header-nav {
@@ -284,53 +222,23 @@ a {
         text-align: right;
     }
 
-    .header-mess {
+    .header-mess,
+    .header-application {
         display: none;
     }
-
     .main {
         padding-top: 60px;
-        height: auto;
-        min-height: 100vh;
-        background-size: cover;
-        background-position: center;
     }
 
-    .main img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .main-actions {
-        padding: 60px 15px;
-        align-items: center;
-    }
-
-    .main-text1,
-    .main-text2,
-    .main-text3 {
-        position: static;
-        transform: none;
-        text-align: center;
-        margin: 0 auto 20px;
-        max-width: 90%;
-    }
-
-    .main-text1 {
-        font-size: 32px;
-        color: #413E3E;
-    }
-
-    .main-text2 {
-        font-size: 32px;
-        color: #335bff;
+    .main-content {
+        padding: 40px 15px 60px;
+        gap: 30px;
     }
 
     .main-text3 {
-        font-size: 24px;
-        color: #ffffff;
+        font-size: 28px;
         line-height: 1.4;
+        max-width: 90%;
     }
 
     .main-btn {
@@ -343,8 +251,8 @@ a {
     .main-application {
         width: 100%;
         max-width: 285px;
+        height: 43px;
         font-size: 18px;
-        padding: 12px 15px;
     }
 
     .footer {
@@ -353,11 +261,7 @@ a {
 
     .footer-content {
         flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-col {
-        min-width: auto;
+        gap: 25px;
     }
 
     .footer-title {
@@ -371,7 +275,10 @@ a {
 
     .footer-bottom-list {
         flex-direction: column;
-        gap: 8px;
-        font-size: 12px;
+        gap: 10px;
+    }
+
+    .footer-bottom-link {
+        font-size: 13px;
     }
 }
