@@ -66,6 +66,9 @@ body {
     font-size: 21px;
 }
 
+.header-nav-galereya:hover{
+    color: #121212;
+}
 /* === ОСНОВНОЙ КОНТЕНТ === */
 
 .main {
@@ -117,7 +120,13 @@ body {
     cursor: pointer;
     border: none;
 }
-
+.main-application:hover{
+    background-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+.btn-link:hover{
+    transform: translateY(-2px);
+}
 /* === ФУТЕР === */
 
 .footer {
@@ -227,17 +236,16 @@ body {
         display: none;
     }
     .main {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     .main-content {
-        padding: 50px 15px 60px;
-        gap: 0px;
+        padding: 40px 15px 60px;
+        gap: 30px;
     }
 
     .main-text3 {
-        padding-top: 10px;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 1.4;
         max-width: 90%;
     }
@@ -246,7 +254,7 @@ body {
         flex-direction: column;
         gap: 15px;
         width: 100%;
-        padding-top: 5px;
+        padding-top: 20px;
     }
 
     .main-application {
@@ -283,11 +291,3 @@ body {
         font-size: 13px;
     }
 }
-
-
-
-
-
-
-
-

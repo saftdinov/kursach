@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
+    src: url(font/Comfortaa.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
+    src: url(font/Comfortaa.ttf);
     font-weight: bold;
 }
 
@@ -114,6 +114,7 @@ a {
 }
 
 .info-center-txt {
+    font-family: "Comfortaa", sans-serif;
     font-size: 36px;
     color: #ffffff;
     align-content: center;
@@ -254,6 +255,10 @@ a {
     transition: color 0.2s;
 }
 
+.header-nav-galereya:hover{
+    color: #4a59e0;
+}
+
 .footer-link:hover {
     color: #fff;
 }
@@ -342,6 +347,9 @@ a {
         flex-direction: column;
         gap: 20px;
         padding: 0 20px;
+    }
+    .slider-btn img{
+        display: none;
     }
 
     .participant-card-left,

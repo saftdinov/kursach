@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
+    src: url(font/Comfortaa.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
+    src: url(font/Comfortaa.ttf);
     font-weight: bold;
 }
 
@@ -74,6 +74,10 @@ body {
     font-size: 21px;
 }
 
+.header-nav-galereya:hover{
+    color: #4a59e0;
+}
+
 .article {
     width: 100%;
     background-color: #121212;
@@ -85,7 +89,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 80px 60px;
+    padding: 40px 80px 60px;
 }
 
 .info-center-txt {
@@ -309,7 +313,7 @@ body {
     }
 
     .info-center {
-        padding: 60px 20px 40px;
+        padding: 85px 20px 40px;
     }
 
     .info-center-txt {

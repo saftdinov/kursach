@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
+    src: url(font/Comfortaa.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url(./font/Comfortaa.ttf);
+    src: url(font/Comfortaa.ttf);
     font-weight: bold;
 }
 
@@ -87,6 +87,10 @@ a {
 
 }
 
+.header-nav-galereya:hover{
+    color: #4a59e0;
+}
+
 .header-mess img {
     width: 50px;
     height: 50px;
@@ -110,7 +114,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
-    padding-top: 20%;
+    padding-top: 15%;
     color: white;
     font-family: Comfortaa, sans-serif;
     max-width: 500px;
