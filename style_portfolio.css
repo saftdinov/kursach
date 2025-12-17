@@ -1,0 +1,337 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(font/Comfortaa.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url(font/Comfortaa.ttf);
+    font-weight: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: Comfortaa, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.header-top {
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 0 80px;
+    backdrop-filter: blur(10px);
+    background-color: hsla(0, 0%, 0%, 0.3);
+    z-index: 1000;
+}
+.image-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 32px;
+}
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 21px;
+    gap: 90px;
+}
+.header-nav-galereya {
+    white-space: nowrap;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 21px;
+}
+.header-nav-galereya:hover{
+    color: #4a59e0;
+}
+.article {
+    width: 100%;
+    background-color: #121212;
+    padding-top: 110px;
+}
+.info-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 80px 60px;
+}
+.info-center-txt {
+    font-size: 36px;
+    color: #ffffff;
+}
+.portfolio-gallery {
+    padding: 0 80px 60px;
+}
+.section-title {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+.gallery-info {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0; /* чтобы не было лишнего отступа */
+}
+.portfolio-reviews {
+    padding: 0 80px 60px;
+}
+.review-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.review-item {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.review-author {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+    font-style: italic;
+}
+.portfolio-actions {
+    padding: 0 80px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.action-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.2s, transform 0.2s;
+}
+.action-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+.footer {
+    background-color: #0a1224;
+    padding: 40px 80px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.footer-col {
+    flex: 1;
+    min-width: 150px;
+}
+.footer-title {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.footer-subtitle {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-link {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.2s;
+}
+.footer-link:hover {
+    color: #fff;
+}
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+}
+.footer-bottom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footer-bottom-link {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.footer-bottom-link:hover {
+    color: #ddd;
+}
+@media (max-width: 768px) {
+    /* Шапка */
+    .header-top {
+        padding: 10px 15px;
+        height: auto;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .header-logo {
+        font-size: 20px;
+        white-space: nowrap;
+        flex: 1;
+        min-width: 120px;
+        justify-content: flex-start;
+    }
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+    .header-nav-galereya {
+        white-space: nowrap;
+        text-align: right;
+    }
+    .header-mess,
+    .header-application {
+        display: none;
+    }
+    .article {
+        padding-top: 60px;
+    }
+    .info-center {
+        padding: 85px 20px 40px;
+    }
+    .info-center-txt {
+        font-size: 26px;
+    }
+    .portfolio-gallery {
+        padding: 0 20px 60px;
+    }
+    .gallery-row {
+        gap: 20px;
+    }
+    .gallery-item {
+        width: 95%;
+        max-width: 320px;
+    }
+    .gallery-info {
+        padding: 12px;
+        font-size: 14px;
+    }
+    .portfolio-reviews {
+        padding: 0 20px 60px;
+    }
+    .review-row {
+        gap: 20px;
+    }
+    .review-item {
+        width: 95%;
+        max-width: 320px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .review-author {
+        font-size: 12px;
+    }
+    .portfolio-actions {
+        padding: 0 20px 80px;
+        gap: 15px;
+    }
+    .action-btn {
+        width: 100%;
+        max-width: 285px;
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+    .footer {
+        padding: 30px 15px 20px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer-col {
+        min-width: auto;
+    }
+    .footer-title {
+        font-size: 22px;
+    }
+    .footer-subtitle,
+    .footer-link {
+        font-size: 14px;
+    }
+    .footer-bottom-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-bottom-link {
+        font-size: 13px;
+    }
+}
