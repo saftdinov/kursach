@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(font/Comfortaa.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(font/Comfortaa.ttf);
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #121212;
+    color: white;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 0 80px;
+    backdrop-filter: blur(10px);
+    background-color: hsla(0, 0%, 0%, 0.3);
+    z-index: 1000;
+}
+
+.image-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-logo img {
+    object-fit: contain;
+}
+
+.header-nav {
+    display: flex;
+    gap: 90px;
+}
+
+.header-nav-galereya {
+    white-space: nowrap;
+    color: white;
+    font-size: 21px;
+}
+
+.header-nav-galereya:hover{
+    color: #121212;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/backg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 110px; /* Отступ под хедер */
+    position: relative;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 60px 20px 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 2;
+}
+.main-text3 {
+    font-size: 36px;
+    color: white;
+    line-height: 1.2;
+    max-width: 800px;
+    word-wrap: break-word;
+}
+.main-btn {
+    display: flex;
+    gap: 30px;
+}
+.main-application {
+    width: 285px;
+    height: 43px;
+    color: #434343;
+    font-family: "Comfortaa", sans-serif;
+    background: #FFFFFF4D;
+    backdrop-filter: blur(18px);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 21px;
+    text-transform: lowercase;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+.main-application:hover{
+    background-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+.btn-link:hover{
+    transform: translateY(-2px);
+}
+.footer {
+    background-color: #0a1224;
+    padding: 40px 80px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.footer-col {
+    flex: 1;
+    min-width: 150px;
+}
+.footer-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.footer-subtitle {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+.footer-list {
+    list-style: none;
+}
+.footer-link {
+    color: #ddd;
+    display: block;
+    padding: 4px 0;
+    font-size: 16px;
+}
+.footer-link:hover {
+    color: white;
+}
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+}
+.footer-bottom-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom-link {
+    color: #999;
+    font-size: 14px;
+    text-decoration: none;
+}
+.footer-bottom-link:hover {
+    color: #ddd;
+}
+@media (max-width: 768px) {
+    .header-top {
+        padding: 10px 15px;
+        height: auto;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .header-logo {
+        font-size: 20px;
+        white-space: nowrap;
+        flex: 1;
+        min-width: 120px;
+        justify-content: flex-start;
+    }
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+    .header-nav-galereya {
+        white-space: nowrap;
+        text-align: right;
+    }
+    .header-mess,
+    .header-application {
+        display: none;
+    }
+    .main {
+        padding-top: 60px;
+    }
+
+    .main-content {
+        padding: 40px 15px 60px;
+        gap: 30px;
+    }
+    .main-text3 {
+        font-size: 28px;
+        line-height: 1.4;
+        max-width: 90%;
+    }
+    .main-btn {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .main-application {
+        width: 100%;
+        max-width: 285px;
+        height: 43px;
+        font-size: 18px;
+    }
+    .footer {
+        padding: 30px 15px 15px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer-title {
+        font-size: 22px;
+    }
+    .footer-link,
+    .footer-subtitle {
+        font-size: 14px;
+    }
+    .footer-bottom-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-bottom-link {
+        font-size: 13px;
+    }
+}
